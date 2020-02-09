@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+/customer-list-app-backend/client
 
 # local env files
 .env.local
