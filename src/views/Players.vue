@@ -3,7 +3,7 @@
     <div class="text-center">
       <h1>Nest Players Test App</h1>
       <div v-if="players.length === 0">
-        <h2> No customer found at the moment </h2>
+        <h2> No players found at the moment </h2>
       </div>
     </div>
 
