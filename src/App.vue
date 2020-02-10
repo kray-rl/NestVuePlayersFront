@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <button><router-link to="/home">Home</router-link></button>
-      <button><router-link to="/top">Top</router-link></button>
-      <button><router-link to="/full">Full</router-link></button>
+      <h1>Nest Players Test App</h1>
+      <button><router-link to="/home">Начало</router-link></button>
+      <button><router-link to="/top">Топ 5</router-link></button>
+      <button><router-link to="/full">Весь список</router-link></button>
     </div>
-    <router-view/>
+    <div class="wrapper">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -35,5 +38,19 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+button{
+  min-width: 150px;
+  margin-right: 20px;
+  border: 1px solid green;
+  background: white;
+}
+
+.wrapper{
+  border: 1px solid green;
+  max-width: 1350px;
+  margin: 0 auto;
+  border-radius: 25px;
 }
 </style>

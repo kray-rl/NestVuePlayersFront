@@ -1,13 +1,5 @@
 <template>
-  <div class="container-fluid">
-    <div class="text-center">
-      <h1>Nest Players Test App</h1>
-      <div v-if="players.length === 0">
-        <h2> No players found at the moment </h2>
-      </div>
-    </div>
-
-    <div class="">
+  <div class="container-fluid mt-3">
       <table class="table table-bordered">
         <thead class="thead-dark">
         <tr>
@@ -28,7 +20,11 @@
         </tr>
         </tbody>
       </table>
-    </div>
+      <div class="text-center">
+        <div v-if="players.length === 0">
+          <h2> В данный момент игроки не найдены </h2>
+        </div>
+      </div>
   </div>
 </template>
 <script>
